@@ -11,3 +11,18 @@ spring:
         file-extension: yaml #nacos页面 Data id 的名称就是（application的name）+（file-extension）   service1.yaml
         namespace: 7b1ec964-4e8a-4dad-99e6-88abf0f7fd1f # 开发环境  指定 具体的namespace
         group: TEST_GROUP # 测试组
+        refresh: true
+
+        # config external configuration
+        # 1、Data Id 在默认的组 DEFAULT_GROUP,不支持配置的动态刷新
+        ext‐config[0]:
+          data‐id: ext‐config‐common01.properties
+        # 2、Data Id 不在默认的组，不支持动态刷新
+        ext‐config[1]:
+          data‐id: ext‐config‐common02.properties
+          group: GLOBALE_GROUP
+        # 3、Data Id 既不在默认的组，也支持动态刷新
+        ext‐config[2]:
+          data‐id: ext‐config‐common03.properties
+          group: REFRESH_GROUP
+          refresh: true
