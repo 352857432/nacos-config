@@ -38,6 +38,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <!-- spring-boot -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
