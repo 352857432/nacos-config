@@ -30,6 +30,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <!-- spring-cloud -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
