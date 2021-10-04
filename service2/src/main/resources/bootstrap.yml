@@ -1,0 +1,13 @@
+server:
+  port: 9999 #启动端口 命令行注入
+
+spring:
+  application:
+    name: service1
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848 # 配置中心地址
+        file-extension: yaml #nacos页面 Data id 的名称就是（application的name）+（file-extension）   service1.yaml
+        namespace: 7b1ec964-4e8a-4dad-99e6-88abf0f7fd1f # 开发环境  指定 具体的namespace
+        group: TEST_GROUP # 测试组
