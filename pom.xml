@@ -8,7 +8,6 @@
     <artifactId>nacos-config</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>sevice1</module>
         <module>service2</module>
         <module>service1</module>
     </modules>
